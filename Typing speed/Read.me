@@ -1,0 +1,49 @@
+# ⌨️ Typing Speed Test (C++)
+
+This project is a console-based **Typing Speed Test** built with C++. It challenges users to improve their typing speed and accuracy by displaying random sentences from a binary file, timing their input, and then evaluating their performance.
+
+Users can choose from different difficulty levels—Easy, Medium, and Hard—each offering sentences of increasing complexity. After typing the displayed sentence, the program calculates:
+
+- 📈 **Typing Speed** (characters per minute)
+- ✅ **Accuracy** (percentage of correct characters)
+- 🔤 **Total Characters and Words Typed**
+- ❌ **Number of Mistakes**
+
+---
+
+## 💡 Features
+
+- 🎯 Difficulty modes (Easy, Medium, Hard)
+- 📁 Binary file handling for sentence storage
+- 🎰 Random sentence selection
+- ⏱ Real-time timing with `time.h`
+- 📊 Performance report including speed, accuracy, and mistakes
+- 🎨 ANSI color-coded terminal output
+
+---
+
+## 📦 How It Works
+
+1. The user selects a difficulty level from the menu.
+2. A random sentence is read from a `.bin` file containing fixed-size sentence blocks.
+3. The sentence is displayed, and the timer starts.
+4. The user types the sentence and presses Enter.
+5. The program calculates and displays the result.
+
+---
+
+## 🛠 Technologies Used
+
+- C++ (OOP with classes and inheritance)
+- File I/O (Binary mode)
+- ANSI Escape Codes (for color output)
+- `ctime` (for timing)
+- `cstring` and `iomanip`
+
+---
+
+## 🧪 Usage
+
+```bash
+g++ main.cpp -o typing_test
+./typing_test
